@@ -273,8 +273,8 @@ body {
     .ring,
     .necklace,
     .pendant {
-        height: 25%;
-        width: 25%;
+        height: 15%;
+        width: 15%;
     }
 
     .submitBtn {

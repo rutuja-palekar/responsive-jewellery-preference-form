@@ -56,7 +56,7 @@
   - Outfit image upload (optional)  
 - Styled using CSS for a visually appealing and user-friendly interface.   
 - Form validation to ensure required fields are filled out.  
-- Fully responsive design to ensure a great user experience on mobile,tablet, and desktop devices.  
+- Fully responsive design to ensure a great user experience on mobile, tablet, and desktop devices.  
   
 
 ## Project Structure  
