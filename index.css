@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+
+.mainWrapper {
+    height: max-content;
+    width: 100%;
+    margin-top: 0rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: rgb(226, 14, 249);
+    background: linear-gradient(90deg, rgba(226, 14, 249, 1) 0%, rgb(250, 2, 204) 32%, rgba(0, 212, 255, 1) 100%);
+}
+
+.preferenceForm {
+    height: max-content;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    margin: 0 auto;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.8;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 1.5rem;
+    outline: none;
+    padding-bottom: 2rem;
+}
+
+.preferenceFormHeading {
+    height: max-content;
+    width: 80%;
+    font-family: "EB Garamond", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.occasionFieldset,
+.purchaseTypeFieldset,
+.genderFieldset,
+.religionFieldset,
+.jewelleryFieldset,
+.recommendFieldset {
+    height: max-content;
+    width: 60%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.purchaseTypeDiv {
+    display: flex;
+    align-items: center;
+}
+
+.purchaseTypeDiv input,
+.purchaseTypeDiv label {
+    vertical-align: middle;
+}
+
+.occasionLabel,
+.occasionSelect,
+.purchaseTypeLabel,
+.giftLabel,
+.personalLabel,
+.giftInput,
+.personalInput,
+.genderLabel,
+.ageLabel,
+.ageGroupLabelDiv,
+.religionLabel,
+.religionSelect,
+.jewelleryTypeLabel,
+.budgetLableDiv,
+.budgetLabel,
+.recommendLabel,
+.recommendFileUpload {
+    height: max-content;
+    width: 100%;
+    font-family: "EB Garamond", serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1mm;
+}
+
+.occasionSelect,
+.purchaseTypeDiv,
+.gendersDiv,
+.ageGroupContainer,
+.religionSelect,
+.jewelleryDiv,
+.recommendFileUpload {
+    margin-top: 0.5rem;
+}
+
+.budgetFieldset {
+    margin-top: 1rem;
+}
+
+.required {
+    color: #ff0000;
+}
+
+.occasionSelect,
+.religionSelect {
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+.religionSpan {
+    font-size: 1rem;
+}
+
+.gendersDiv {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.maleGender,
+.femaleGender {
+    height: 15%;
+    width: 15%;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.ageGroupFieldset,
+.budgetFieldset {
+    height: max-content;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.ageGroupFieldset {
+    margin-top: 1rem;
+}
+
+.ageGroupContainer,
+.budgetContainer {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.1rem;
+    letter-spacing: 0.1mm;
+    line-height: 2.5rem;
+}
+
+.ageGroupItem {
+    height: max-content;
+    width: 50%;
+    display: flex;
+}
+
+.jewelleryDiv {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.ring,
+.necklace,
+.pendant {
+    height: 15%;
+    width: 15%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.itemBudget {
+    height: max-content;
+    width: 80%;
+}
+
+.submitBtnDiv {
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.submitBtn {
+    height: max-content;
+    width: 40%;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    border: 1px solid transparent;
+    border-radius: 5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.1rem;
+    background-color: white;
+    color: #000;
+    letter-spacing: 0.1mm;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(226, 14, 249, 1) 0%, rgb(250, 2, 204) 32%, rgba(0, 212, 255, 1) 100%);
+}
+
+.submitBtn:hover {
+    background: #2cc06a;
+    border: 1px solid #2cc06a;
+    transition: 0.2s ease-in-out;
+}
+
+.imagePreview {
+    margin-top: 10px;
+}
+
+.imagePreview img.previewImage {
+    height: 40%;
+    width: 40%;
+}
+
+@media screen and (max-width: 576px) {
+    .preferenceForm {
+        width: 95%;
+    }
+
+    .preferenceFormHeading {
+        font-size: 1.8rem;
+    }
+
+    .occasionFieldset,
+    .purchaseTypeFieldset,
+    .genderFieldset,
+    .religionFieldset,
+    .jewelleryFieldset,
+    .recommendFieldset {
+        width: 90%;
+    }
+
+    .ageGroupFieldset,
+    .budgetFieldset {
+        width: 88%;
+    }
+
+    .maleGender,
+    .femaleGender,
+    .ring,
+    .necklace,
+    .pendant {
+        height: 25%;
+        width: 25%;
+    }
+
+    .submitBtn {
+        width: 60%;
+    }
+
+    .imagePreview img.previewImage {
+        height: 30%;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .preferenceForm {
+        width: 80%;
+    }
+
+    .preferenceFormHeading {
+        font-size: 1.7rem;
+    }
+
+    .occasionFieldset,
+    .purchaseTypeFieldset,
+    .genderFieldset,
+    .religionFieldset,
+    .jewelleryFieldset,
+    .recommendFieldset {
+        width: 80%;
+    }
+
+    .ageGroupFieldset,
+    .budgetFieldset {
+        width: 78%;
+    }
+
+    .maleGender,
+    .femaleGender,
+    .ring,
+    .necklace,
+    .pendant {
+        height: 20%;
+        width: 20%;
+    }
+
+    .submitBtn {
+        width: 50%;
+    }
+
+    .imagePreview img.previewImage {
+        height: 30%;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .preferenceForm {
+        width: 80%;
+    }
+
+    .preferenceFormHeading {
+        font-size: 1.7rem;
+    }
+
+    .occasionFieldset,
+    .purchaseTypeFieldset,
+    .genderFieldset,
+    .religionFieldset,
+    .jewelleryFieldset,
+    .recommendFieldset {
+        width: 80%;
+    }
+
+    .ageGroupFieldset,
+    .budgetFieldset {
+        width: 78%;
+    }
+
+    .submitBtn {
+        width: 40%;
+    }
+
+    .imagePreview img.previewImage {
+        height: 30%;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .preferenceForm {
+        width: 60%;
+    }
+
+    .preferenceFormHeading {
+        font-size: 1.7rem;
+    }
+
+    .occasionFieldset,
+    .purchaseTypeFieldset,
+    .genderFieldset,
+    .religionFieldset,
+    .jewelleryFieldset,
+    .recommendFieldset {
+        width: 80%;
+    }
+
+    .ageGroupFieldset,
+    .budgetFieldset {
+        width: 78%;
+    }
+
+    .maleGender,
+    .femaleGender,
+    .ring,
+    .necklace,
+    .pendant {
+        height: 20%;
+        width: 20%;
+    }
+
+    .submitBtn {
+        width: 40%;
+    }
+
+    .imagePreview img.previewImage {
+        height: 35%;
+        width: 35%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+    .preferenceForm {
+        width: 50%;
+    }
+
+    .preferenceFormHeading {
+        font-size: 1.9rem;
+    }
+
+    .occasionFieldset,
+    .purchaseTypeFieldset,
+    .genderFieldset,
+    .religionFieldset,
+    .jewelleryFieldset,
+    .recommendFieldset {
+        width: 80%;
+    }
+
+    .ageGroupFieldset,
+    .budgetFieldset {
+        width: 78%;
+    }
+
+    .maleGender,
+    .femaleGender,
+    .ring,
+    .necklace,
+    .pendant {
+        height: 20%;
+        width: 20%;
+    }
+
+    .submitBtn {
+        width: 30%;
+    }
+
+    .imagePreview img.previewImage {
+        height: 40%;
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .preferenceForm {
+        width: 50%;
+    }
+
+    .preferenceFormHeading {
+        font-size: 3rem;
+    }
+
+    .occasionFieldset,
+    .purchaseTypeFieldset,
+    .genderFieldset,
+    .religionFieldset,
+    .jewelleryFieldset,
+    .recommendFieldset {
+        width: 80%;
+    }
+
+    .ageGroupFieldset,
+    .budgetFieldset {
+        width: 78%;
+    }
+
+    .occasionLabel,
+    .occasionSelect,
+    .purchaseTypeLabel,
+    .giftLabel,
+    .personalLabel,
+    .giftInput,
+    .personalInput,
+    .genderLabel,
+    .ageLabel,
+    .ageGroupLabelDiv,
+    .religionLabel,
+    .religionSelect,
+    .jewelleryTypeLabel,
+    .budgetLableDiv,
+    .budgetLabel,
+    .recommendLabel,
+    .recommendFileUpload {
+        font-size: 2rem;
+    }
+
+    .ageGroupContainer,
+    .budgetContainer,
+    .religionSpan {
+        font-size: 1.8rem;
+    }
+
+    .maleGender,
+    .femaleGender,
+    .ring,
+    .necklace,
+    .pendant {
+        height: 20%;
+        width: 20%;
+    }
+
+    .submitBtn {
+        width: 30%;
+    }
+
+    .imagePreview img.previewImage {
+        height: 50%;
+        width: 50%;
+    }
+}

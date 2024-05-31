@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine Sphere</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="mainWrapper">
+
+        <form class="preferenceForm">
+            <h1 class="preferenceFormHeading">Your Personalized Jewellery Awaits: Share Your Preferences</h1>
+
+            <fieldset class="occasionFieldset">
+                <label for="occasion" class="occasionLabel">Occasion&nbsp;<span class="required">*</span></label>
+
+                <select name="occasion" id="occasion" class="occasionSelect">
+                    <option value="">Select Occasion</option>
+                    <option value="engagement">Engagement</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="birthday">Birthday</option>
+                    <option value="dailywear">Dailywear</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="purchaseTypeFieldset">
+
+                <label for="purchaseType" class="purchaseTypeLabel">Purchase Type&nbsp;<span
+                        class="required">*</span></label>
+
+
+                <div class="purchaseTypeDiv">
+                    <input type="radio" class="giftInput" id="giftInput" name="purchaseType">
+                    <label for="giftInput" class="giftLabel">&nbsp;Gift</label>
+                </div>
+
+                <div class="purchaseTypeDiv">
+                    <input type="radio" class="personalInput" id="personalInput" name="purchaseType">
+                    <label for="personalInput" class="personalLabel">&nbsp;Personal</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="genderFieldset">
+                <label for="genderLabel" class="genderLabel">Gender&nbsp;<span class="required">*</span></label>
+
+                <div class="gendersDiv">
+                    <img src="./male.png" alt="Male" class="maleGender">
+
+                    <img src="./female.png" alt="Female" class="femaleGender">
+                </div>
+            </fieldset>
+
+            <fieldset class="ageGroupFieldset">
+
+                <div class="ageGroupLabelDiv">
+
+                    <label for="ageLabel" class="ageLabel">Age Group&nbsp;<span class="required">*</span></label>
+
+                </div>
+
+                <div class="ageGroupContainer">
+                    <div class="ageGroupItem">
+                        <input type="radio" class="ageRadioOne" id="ageRadioOne" name="ageGroup">
+                        <label for="ageRadioOne" class="ageRadioOne">&nbsp;1 - 12</label>
+                    </div>
+
+                    <div class="ageGroupItem">
+                        <input type="radio" class="ageRadioTwo" id="ageRadioTwo" name="ageGroup">
+                        <label for="ageRadioTwo" class="ageRadioTwo">&nbsp;13 - 18</label>
+                    </div>
+
+                    <div class="ageGroupItem">
+                        <input type="radio" class="ageRadioThree" id="ageRadioThree" name="ageGroup">
+                        <label for="ageRadioThree" class="ageRadioThree">&nbsp;18 - 35</label>
+                    </div>
+
+                    <div class="ageGroupItem">
+                        <input type="radio" class="ageRadioFour" id="ageRadioFour" name="ageGroup">
+                        <label for="ageRadioFour" class="ageRadioFour">&nbsp;36 - 55</label>
+                    </div>
+
+                    <div class="ageGroupItem">
+                        <input type="radio" class="ageRadioFive" id="ageRadioFive" name="ageGroup">
+                        <label for="ageRadioFive" class="ageRadioFive">&nbsp;56+</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="religionFieldset">
+                <label for="religion" class="religionLabel">Religion <span class="religionSpan"> (for better
+                        recommendations)</span></label>
+
+                <select id="religion" name="religion" class="religionSelect">
+                    <option value="">Select Religion</option>
+                    <option value="hinduism">Hinduism</option>
+                    <option value="islam">Islam</option>
+                    <option value="christianity">Christianity</option>
+                    <option value="sikhism">Sikhism</option>
+                    <option value="buddhism">Buddhism</option>
+                    <option value="jainism">Jainism</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="jewelleryFieldset">
+                <label for="jewelleryType" class="jewelleryTypeLabel">Type of Jewellery&nbsp;
+                    <span class="required">*</span></label>
+                <div class="jewelleryDiv">
+                    <img src="./ring.png" alt="Ring" class="ring">
+
+                    <img src="./necklace.png" alt="Necklace" class="necklace">
+
+                    <img src="./pendant.png" alt="Pendant" class="pendant">
+                </div>
+            </fieldset>
+
+            <fieldset class="budgetFieldset">
+
+                <div class="budgetLableDiv">
+                    <label for="budget" class="budgetLabel">Budget&nbsp;<span class="required">*</span></label>
+                </div>
+
+                <div class="budgetContainer">
+
+                    <div class="itemBudget">
+                        <input type="radio" id="budgetLow" name="budget" value="low">
+                        <label for="budgetLow">Below ₹5k</label>
+                    </div>
+
+                    <div class="itemBudget">
+                        <input type="radio" id="budgetMedium" name="budget" value="medium">
+                        <label for="budgetMedium">₹5k - ₹20k</label>
+                    </div>
+
+                    <div class="itemBudget">
+                        <input type="radio" id="budgetHigh" name="budget" value="high">
+                        <label for="budgetHigh">₹20k - ₹50k</label>
+                    </div>
+
+                    <div class="itemBudget">
+                        <input type="radio" id="budgetVeryHigh" name="budget" value="very-high">
+                        <label for="budgetVeryHigh">Above ₹50k</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="recommendFieldset">
+                <div class="recommendDiv">
+                    <label for="recommend" class="recommendLabel">Would you like to match your jewellery with an
+                        outfit? Upload an image of your outfit for better recommendations.</label>
+
+                    <input type="file" class="recommendFileUpload" id="recommendFileUpload" accept="image/png, image/jpg, image/jpeg">
+                </div>
+                <div id="imagePreview" class="imagePreview">
+                </div>
+            </fieldset>
+
+            <div class="submitBtnDiv">
+                <button type="submit" class="submitBtn">Submit</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
