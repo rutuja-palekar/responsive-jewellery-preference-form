@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     form.addEventListener('submit', function (event) {
-        event.preventDefault(); 
+        event.preventDefault();
         let invalidFields = [];
 
         requiredFields.forEach(field => {
@@ -132,13 +132,13 @@ document.addEventListener("DOMContentLoaded", function () {
 document.querySelectorAll('.gendersDiv img').forEach(img => {
     img.addEventListener('click', function () {
         const isAlreadySelected = this.classList.contains('selected');
-        
+
         document.querySelectorAll('.gendersDiv img').forEach(img => {
             img.classList.remove('selected');
             img.style.backgroundColor = '';
             img.style.border = '';
         });
-        
+
         if (!isAlreadySelected) {
             this.classList.add('selected');
             this.style.backgroundColor = 'rgb(32, 107, 237)';
@@ -165,22 +165,22 @@ document.querySelectorAll('.jewelleryDiv img').forEach(img => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const fileInput = document.getElementById('recommendFileUpload');
     const imagePreview = document.getElementById('imagePreview');
 
-    fileInput.addEventListener('change', function() {
+    fileInput.addEventListener('change', function () {
         const file = this.files[0];
 
         if (file) {
             const reader = new FileReader();
 
-            reader.addEventListener('load', function() {
+            reader.addEventListener('load', function () {
                 const img = document.createElement('img');
                 img.src = this.result;
                 img.alt = 'Outfit Preview';
                 img.classList.add('previewImage');
-                
+
                 imagePreview.innerHTML = '';
                 imagePreview.appendChild(img);
             });
