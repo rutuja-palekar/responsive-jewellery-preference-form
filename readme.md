@@ -46,22 +46,22 @@
 ## Form Features  
 - Collects user information for a personalized jewellery customization process.  
 - Includes fields for:  
- - Occasion  
- - Purchase type (gift or personal)  
- - Gender  
- - Age group  
- - Religion (optional)  
- - Type of jewellery  
- - Budget  
- - Outfit image upload (optional)  
+  - Occasion  
+  - Purchase type   
+  - Gender  
+  - Age group  
+  - Religion (optional)  
+  - Type of jewellery  
+  - Budget  
+  - Outfit image upload (optional)  
 Styled using CSS for a visually appealing and user-friendly interface.   
 Form validation to ensure required fields are filled out.  
 Fully responsive design to ensure a great user experience on mobile,tablet, and desktop devices.  
   
-  
+
 ## Project Structure  
-index.html: HTML structure of the form.  
-index.css: CSS styles for the form.  
-index.js: JavaScript for form interactivity and validation.  
+- index.html: HTML structure of the form.  
+- index.css: CSS styles for the form.  
+- index.js: JavaScript for form interactivity and validation.  
   
   
